@@ -1,61 +1,106 @@
 body
 {
-background-color: hsl(257, 40%, 49%);
-color: aliceblue;
-background-image: url(bg-desktop.svg);
-background-size: cover;
-margin: 5%;
+  background-image: url('bg-desktop.svg');
+  background-size: 96%;
+  background-repeat: no-repeat;
+  background-color: hsl(257, 40%, 49%);
 }
-h1
+.header img
 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 600;
+  width: 12rem;
 }
-p
+.header
 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 400;
+  margin: 3rem;
 }
-.button
-{
-  font-family: 'Open Sans', sans-serif;
-  color: hsl(257, 40%, 49%);
-  border-radius: 30%;
-  border: solid white;
-  font-size: 15px;
-  padding-left: 40x;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: white;
-}
-.text
-{
-  
-  border: solid black;
-
-}
-.illustration img
-{
-  width: 600px;
-  border: solid black;
-}
-.logo
-{
-  
-  
-}
-.logo img
-{
-  width: 200px;
-  border: solid black;
-}
-
-.container
-{
+.container{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border:  solid black;
-  margin-top: 70px;
+  margin: 3rem;
+  margin-bottom: 0%;
+  
 }
+.illustration,text{
+  
+}
+.illustration, img{
+  width: 40rem;
+}
+.illustration{
+  padding: 1rem;
+  
+}
+.text{
+  padding:2rem;
+  color: white;
+  
+}
+h1{
+  font-family: 'Poppins';
+  font-weight: 600;
+}
+p{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.Register{
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  color: hsl(257, 40%, 49%);
+  font-size: 1rem;
+  border: none;
+}
+.contact{
+   display: flex;
+   justify-content: flex-end;
+   align-content: center;
+   margin: 3rem;
+   padding-right: 30px;
+   margin-top: 0%;
+   height: 3rem;
+}
+.logo{
+  border: solid white;
+  border-width: 1px;
+  border-radius: 50%;
+  width: 20px;
+  margin: 0.5rem;
+  align-self: center;
+  padding: 10px;
 
+}
+.logo:hover{
+ border: solid hsl(300, 69%, 71%);
+}
+i:hover{
+  color:hsl(300, 69%, 71%);
+}
+button:hover{
+  background-color: hsl(300, 69%, 71%);
+  color: white;
+}
+@media (max-width: 600px) {
+  body
+  {
+    background-image: url('bg-mobile.svg');
+    background-size: cover;
+  }
+  .container{
+    grid-template-rows: 1fr 1fr;
+    margin: 3rem;
+    margin-bottom: 0%;
+    border: solid black;
+  }
+  .contact{
+    justify-content: center;
+   align-content: center;
+   margin: 3rem;
+   padding-right: 30px;
+   margin-top: 0%;
+   height: 3rem;
+  }
+  
+}
