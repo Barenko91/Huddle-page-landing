@@ -1,7 +1,6 @@
 body
 {
   background-image: url('bg-desktop.svg');
-  background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%);
   margin: 3rem;
@@ -26,15 +25,15 @@ body
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border: solid black;
+  
   padding: 0%;
   
 }
 .text
 {
-  padding:2rem;
+  padding:3rem;
   color: white;
-  border: solid black;
+  
 }
 h1
 {
@@ -93,10 +92,11 @@ button:hover
   body
   {
     background-image: url('bg-mobile.svg');  
+    margin: auto;
   }
   .container{
     grid-template-columns: none;
-    border: solid black;
+   
     text-align: center;
     margin-top: 4.5rem;
   }
